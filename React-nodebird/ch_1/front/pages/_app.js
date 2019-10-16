@@ -1,6 +1,7 @@
 import React from 'react'
 import AppLayout from '../components/AppLayout'
 import Head from 'next/head'
+import PropTypes from 'prop-types'
 
 const NodeBird = ({ Component }) => {
     return (
@@ -14,5 +15,8 @@ const NodeBird = ({ Component }) => {
             </AppLayout>
         </>
     )
+} 
+NodeBird.propTypes = {
+    Component: PropTypes.elementType,
 }
 export default NodeBird

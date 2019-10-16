@@ -1,5 +1,15 @@
 import React, { useState } from 'react'
 import { Form, Input, Checkbox, Button } from 'antd'
+import PropTypes from 'prop-types'
+
+const TextInput = ({value}) => {
+    return (
+        <div>{value}</div>
+    )
+}
+TextInput.propTypes = {
+    value: PropTypes.string
+}
 
 const Signup = () => {
     const [id, setId] = useState('')
@@ -50,6 +60,7 @@ const Signup = () => {
 
     return <>
             <Form onSubmit={onSubmit} sytle={{padding: 10}}>
+                <TextInput value="123" />   
                 <div>
                     <label htmlFor="user-id">아이디</label>
                     <br />

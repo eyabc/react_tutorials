@@ -108,11 +108,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ "antd");
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "D:\\project\\react_tutorials\\React-nodebird\\ch_1\\front\\components\\AppLayout.js";
+var _jsxFileName = "C:\\Users\\admin\\Desktop\\Melissa\\React tutorials\\React-nodebird\\ch_1\\front\\components\\AppLayout.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+const dummy = {
+  nickname: '제로초',
+  Post: [],
+  following: [],
+  follower: []
+};
 
 const AppLayout = ({
   children
@@ -120,61 +126,61 @@ const AppLayout = ({
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 12
     },
     __self: undefined
   }, __jsx(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"], {
     mode: "horizontal",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 13
     },
     __self: undefined
   }, __jsx(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
     key: "home",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 14
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 14
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 14
     },
     __self: undefined
   }, "Nodebird"))), __jsx(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
     key: "profile",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 15
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/profile",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 15
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 15
     },
     __self: undefined
   }, "\uD504\uB85C\uD544"))), __jsx(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
     key: "search",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 16
     },
     __self: undefined
   }, __jsx(antd__WEBPACK_IMPORTED_MODULE_2__["Input"].Search, {
@@ -184,29 +190,119 @@ const AppLayout = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 17
     },
     __self: undefined
   }))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/signup",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 20
     },
     __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 20
     },
     __self: undefined
   }, __jsx(antd__WEBPACK_IMPORTED_MODULE_2__["Button"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 20
     },
     __self: undefined
-  }, "\uD68C\uC6D0\uAC00\uC785"))), children);
+  }, "\uD68C\uC6D0\uAC00\uC785"))), __jsx(antd__WEBPACK_IMPORTED_MODULE_2__["Row"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: undefined
+  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+    xs: 24,
+    md: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: undefined
+  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_2__["Card"], {
+    actions: [__jsx("div", {
+      key: "twit",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: undefined
+    }, "\uC9F9\uC9F9", __jsx("br", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: undefined
+    }), dummy.Post.length), __jsx("div", {
+      key: "following",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: undefined
+    }, "following", __jsx("br", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: undefined
+    }), dummy.following.length), __jsx("div", {
+      key: "follower",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: undefined
+    }, "follower", __jsx("br", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: undefined
+    }), dummy.follower.length)],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: undefined
+  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_2__["Card"].Meta, {
+    avatar: __jsx(antd__WEBPACK_IMPORTED_MODULE_2__["Avatar"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: undefined
+    }, dummy.nickname[0]),
+    title: dummy.nickname,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: undefined
+  }))), __jsx(antd__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+    xs: 24,
+    md: 12,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: undefined
+  }, children), __jsx(antd__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+    xs: 24,
+    md: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: undefined
+  }, "3\uBC88\uC9F8")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AppLayout);
@@ -1915,8 +2011,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_AppLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/AppLayout */ "./components/AppLayout.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "D:\\project\\react_tutorials\\React-nodebird\\ch_1\\front\\pages\\_app.js";
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "C:\\Users\\admin\\Desktop\\Melissa\\React tutorials\\React-nodebird\\ch_1\\front\\pages\\_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -1927,13 +2026,13 @@ const NodeBird = ({
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: undefined
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: undefined
   }, "NodeBird"), __jsx("link", {
@@ -1941,24 +2040,27 @@ const NodeBird = ({
     href: "https://cdnjs.cloudflare.com/ajax/libs/antd/3.23.6/antd.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: undefined
   })), __jsx(_components_AppLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: undefined
   }, __jsx(Component, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: undefined
   })));
 };
 
+NodeBird.propTypes = {
+  Component: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.elementType
+};
 /* harmony default export */ __webpack_exports__["default"] = (NodeBird);
 
 /***/ }),
