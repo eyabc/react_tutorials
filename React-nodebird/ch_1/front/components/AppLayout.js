@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
-import { Menu, Input,  Row, Col, Card, Avatar,  } from 'antd'
+import { Menu, Input, Row, Col, Card, Avatar, } from 'antd'
 import LoginForm from './LoginForm'
+import UserProfile from './UserProfile'
 const dummy = {
     nickname: '제로초',
     Post: [],
@@ -20,28 +21,11 @@ const AppLayout = ({ children }) => {
         </Menu>
         <Row>
             <Col xs={24} md={6}>
-                {dummy.isLoggedIn ?
-                    <Card
-                        actions={[
-                            <div key="twit">짹짹<br />{dummy.Post.length}</div>,
-                            <div key="following">following<br />{dummy.following.length}</div>,
-                            <div key="follower">follower<br />{dummy.follower.length}</div>,
-                        ]}
-                    >
-                        <Card.Meta
-                            avatar={<Avatar>{dummy.nickname[0]}</Avatar>}
-                            title={dummy.nickname}
-                        />
-                    </Card>
-                    : <LoginForm />
-                    }
-
+                {dummy.isLoggedIn ? <UserProfile /> : <LoginForm />}
             </Col>
-            <Col xs={24} md={12}>{
-                children}
-            </Col>
+            <Col xs={24} md={12}>{children} </Col>
             <Col xs={24} md={6}>
-                3번째
+                <Link href="https://www.zerocho.com" ><a target="_blank">Made by Zerocho</a></Link>
             </Col>
         </Row>
 
